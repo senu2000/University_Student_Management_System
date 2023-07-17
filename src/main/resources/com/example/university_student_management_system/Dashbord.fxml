@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.university_student_management_system.DashbordController">
+   <children>
+      <ImageView fitHeight="534.0" fitWidth="854.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/IMG_6145.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" opacity="0.45" stroke="WHITE" strokeType="INSIDE" width="124.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="74.0" layoutX="124.0" opacity="0.45" stroke="WHITE" strokeType="INSIDE" width="678.0" />
+      <Label layoutX="32.0" layoutY="123.0" text="Welcome !">
+         <font>
+            <Font name="Agency FB Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_WelcomeName" alignment="CENTER" layoutX="5.0" layoutY="145.0" prefHeight="38.0" prefWidth="114.0">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="8.0" prefHeight="18.0" prefWidth="304.0" text="UVA WELLASSA UNIVERSITY">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="49.0" prefHeight="18.0" prefWidth="183.0" text="of  SRI LANKA">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font></Label>
+      <Hyperlink layoutX="45.0" layoutY="230.0" text="Home" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="45.0" layoutY="263.0" onAction="#UserStudent" text="Student" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="45.0" layoutY="295.0" onAction="#UserRecords" text="Records" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="45.0" layoutY="324.0" onAction="#UserAnalyze" text="Analyze" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="21.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/icons8-sign-4435up-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="21.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="21.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/edit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="21.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/data-analysis.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="174.0" layoutY="120.0" opacity="0.45" stroke="#080b44" strokeType="INSIDE" width="236.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="510.0" layoutY="120.0" opacity="0.45" stroke="#080b44" strokeType="INSIDE" width="236.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="174.0" layoutY="322.0" opacity="0.45" stroke="#080b44" strokeType="INSIDE" width="236.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="510.0" layoutY="322.0" opacity="0.45" stroke="#080b44" strokeType="INSIDE" width="236.0" />
+      <Label layoutX="187.0" layoutY="125.0" prefHeight="38.0" prefWidth="153.0" text="Total Students" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="324.0" prefHeight="38.0" prefWidth="153.0" text="Total Enrolled" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="126.0" prefHeight="38.0" prefWidth="153.0" text="Total Inactive" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="324.0" prefHeight="38.0" prefWidth="167.0" text="Total Graduated" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="tf_TotalStudents" alignment="CENTER" layoutX="189.0" layoutY="174.0" prefHeight="47.0" prefWidth="38.0" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="tf_TotalInactive" alignment="CENTER" layoutX="523.0" layoutY="174.0" prefHeight="47.0" prefWidth="38.0" textFill="#df0202">
+         <font>
+            <Font name="Agency FB Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="tf_TotalEnrolled" alignment="CENTER" layoutX="189.0" layoutY="385.0" prefHeight="47.0" prefWidth="38.0" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="tf_TotalGraduated" alignment="CENTER" layoutX="523.0" layoutY="385.0" prefHeight="47.0" prefWidth="38.0" textFill="#055903">
+         <font>
+            <Font name="Agency FB Bold" size="45.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="111.0" fitWidth="150.0" layoutX="-15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/ORIGINAL%20UWU%20LOGO%20(Black).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="104.0" layoutX="320.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/students-icons-noun-project-369787.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="104.0" layoutX="659.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/students-icons-noun-project-369787.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="104.0" layoutX="659.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/1245402-200.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="104.0" layoutX="326.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/_Pngtree_student_icon_3546647843-removebg-preview.png" />
+         </image></ImageView>
+      <ImageView fitHeight="80.0" fitWidth="104.0" layoutX="659.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/—Pngtree—vector%20male%20student%20icon_3787629.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="735.0" layoutY="467.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #080b44;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

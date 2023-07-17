@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.university_student_management_system.StudentController">
+   <children>
+      <ImageView fitHeight="534.0" fitWidth="854.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/IMG_6145.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" opacity="0.45" stroke="WHITE" strokeType="INSIDE" width="124.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="74.0" layoutX="124.0" opacity="0.45" stroke="WHITE" strokeType="INSIDE" width="678.0" />
+      <Label layoutX="32.0" layoutY="123.0" text="Welcome !">
+         <font>
+            <Font name="Agency FB Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_WelcomeName" alignment="CENTER" layoutX="5.0" layoutY="145.0" prefHeight="38.0" prefWidth="114.0" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="18.0" prefHeight="18.0" prefWidth="304.0" text="Data Entry">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="45.0" layoutY="230.0" onAction="#goHome" text="Home" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="45.0" layoutY="263.0" text="Student" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="45.0" layoutY="295.0" onAction="#goRecords" text="Records" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="45.0" layoutY="327.0" onAction="#goAnalyze" text="Analyze" textFill="#080b44">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="21.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/icons8-sign-4435up-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="21.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="21.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/edit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="21.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/data-analysis.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="410.0" layoutX="150.0" layoutY="83.0" opacity="0.38" stroke="BLACK" strokeType="INSIDE" width="619.0" />
+      <Label layoutX="161.0" layoutY="97.0" text="Student ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfid" layoutX="250.0" layoutY="93.0" promptText="UWU/CST/20/001" />
+      <Label layoutX="167.0" layoutY="134.0" text="Surname" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfsurname" layoutX="250.0" layoutY="132.0" promptText="Surname" />
+      <Label layoutX="165.0" layoutY="172.0" text="Lastname" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tflastname" layoutX="250.0" layoutY="170.0" promptText="Last Name" />
+      <TextField fx:id="tfgender" layoutX="250.0" layoutY="207.0" />
+      <Label layoutX="163.0" layoutY="209.0" text="Gender" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfdegree" layoutX="250.0" layoutY="245.0" promptText="Computer Science and T.." />
+      <Label layoutX="163.0" layoutY="247.0" text="Degree" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="545.0" layoutY="97.0" text="Image" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageview" fitHeight="139.0" fitWidth="182.0" layoutX="533.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="table1" layoutX="167.0" layoutY="332.0" onMouseClicked="#selectData" prefHeight="152.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="tid" minWidth="30.0" prefWidth="116.0" text="Student ID" />
+          <TableColumn fx:id="tsurname" prefWidth="66.39996337890625" text="Surname" />
+            <TableColumn fx:id="tlastname" minWidth="30.0" prefWidth="119.20001220703125" text="Lastname" />
+            <TableColumn fx:id="tgender" minWidth="5.0" prefWidth="63.999969482421875" text="Gender" />
+            <TableColumn fx:id="tdegree" prefWidth="75.0" text="Degree" />
+            <TableColumn fx:id="tImage" prefWidth="75.0" text="Image" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="btnInsert" layoutX="163.0" layoutY="283.0" mnemonicParsing="false" onAction="#addStudent" style="-fx-background-color: #080b44;" text="Insert" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnUpdate" layoutX="221.0" layoutY="283.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: #080b44;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnClear" layoutX="289.0" layoutY="282.0" mnemonicParsing="false" onAction="#clear" style="-fx-background-color: #080b44;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="348.0" layoutY="283.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #080b44;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddImage" layoutX="613.0" layoutY="92.0" mnemonicParsing="false" onAction="#addImage" prefHeight="32.0" prefWidth="92.0" style="-fx-background-color: #080b44;" text="Add image" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="file_path" layoutX="613.0" layoutY="292.0" prefHeight="18.0" prefWidth="124.0" text="Label" />
+      <ImageView fitHeight="111.0" fitWidth="150.0" layoutX="-15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/ORIGINAL%20UWU%20LOGO%20(Black).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="415.0" layoutY="283.0" mnemonicParsing="false" onAction="#Print" style="-fx-background-color: #080b44;" text="Print" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

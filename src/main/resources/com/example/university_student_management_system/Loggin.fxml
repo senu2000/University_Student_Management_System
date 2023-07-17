@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.university_student_management_system.LoginController">
+   <children>
+      <ImageView fitHeight="509.0" fitWidth="919.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/login%20pic%201.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" opacity="0.43" stroke="TRANSPARENT" strokeType="INSIDE" width="400.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="125.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="165.0" layoutY="205.0" text="Sign In " textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="275.0" text="Username">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="74.0" layoutY="312.0" text="Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tf_Username" layoutX="137.0" layoutY="270.0" prefHeight="26.0" prefWidth="219.0" promptText="username" />
+      <PasswordField fx:id="ps_Password" layoutX="137.0" layoutY="307.0" prefHeight="26.0" prefWidth="219.0" promptText="password" />
+      <ImageView fitHeight="26.0" fitWidth="21.0" layoutX="44.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/pngwing.com%203(7).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="21.0" layoutX="46.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../images/pngwing.com%202(8).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="127.0" layoutY="407.0" text="Haven't account ? " />
+      <Hyperlink fx:id="hpr_Signup" layoutX="221.0" layoutY="404.0" onAction="#User_Signup" text="Sign Up" textFill="#1921c1" />
+      <Button fx:id="btn_Login" layoutX="162.0" layoutY="360.0" mnemonicParsing="false" onAction="#UserLogin" prefHeight="34.0" prefWidth="70.0" style="-fx-background-color: #080b44;" text="Login" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
